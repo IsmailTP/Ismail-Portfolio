@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ismail — Cybersecurity Portfolio</title>
+    <meta
+      name="description"
+      content="Ismail Inu — Aspiring Cybersecurity Specialist & Ethical Hacker from Calicut, Kerala."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="neon-cursor"></div>
+
+    <!-- Top nav -->
+    <header class="nav glass">
+      <div class="brand">Ismail</div>
+      <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link btn-small btn-primary glow-border"
+          >Hire Me</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="section hero section-observe">
+      <div class="hero-inner">
+        <div class="hero-badge glow-border">Calicut, Kerala</div>
+        <h1 class="hero-title">
+          <span class="highlight">Ismail </span>
+        </h1>
+        <h2 class="hero-subtitle">
+          Aspiring Cybersecurity Dev & Ethical Hacker
+        </h2>
+        <p class="hero-tagline">
+          <span
+            class="typed"
+            data-phrases='["Breaking things to understand them.","Learning by doing.","From reconnaissance to remediation."]'
+          ></span>
+          <span class="caret">▌</span>
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary glow-border"
+            >View Projects</a
+          >
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          <a href="#contact" class="btn btn-primary glow-border">Hire Me</a>
+        </div>
+        <div class="hero-grid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-observe">
+      <div class="container">
+        <h3 class="section-title">About Me</h3>
+        <p class="muted">
+          Beginner cybersecurity learner from Calicut focused on fundamentals,
+          hands-on labs, and ethical hacking methodology, building toward a
+          professional ethical hacker role through consistent practice and
+          documentation. Tools: Nmap, Hydra, Metasploit, Wireshark, Kali Linux,
+          Burp Suite.
+        </p>
+        <div class="tool-row">
+          <span class="chip glow-border">Nmap</span>
+          <span class="chip glow-border">Hydra</span>
+          <span class="chip glow-border">Metasploit</span>
+          <span class="chip glow-border">Wireshark</span>
+          <span class="chip glow-border">Kali Linux</span>
+          <span class="chip glow-border">Burp Suite</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-observe">
+      <div class="container">
+        <h3 class="section-title">Skills</h3>
+        <div class="grid skills-grid">
+          <div class="card glow-hover glow-border">
+            <div class="icon">🌐</div>
+            <h4>Networking</h4>
+            <p class="muted">
+              OSI/TCP-IP, ports, subnets, ARP, routing basics.
+            </p>
+          </div>
+          <div class="card glow-hover glow-border">
+            <div class="icon">🐧</div>
+            <h4>Linux</h4>
+            <p class="muted">Shell, permissions, processes, system tools.</p>
+          </div>
+          <div class="card glow-hover glow-border">
+            <div class="icon">🐍</div>
+            <h4>Python</h4>
+            <p class="muted">Scripting, automation, small tooling.</p>
+          </div>
+          <div class="card glow-hover glow-border">
+            <div class="icon">🛡️</div>
+            <h4>Ethical Hacking</h4>
+            <p class="muted">Recon, scanning, enumeration, exploitation.</p>
+          </div>
+          <div class="card glow-hover glow-border">
+            <div class="icon">🔒</div>
+            <h4>Web Security</h4>
+            <p class="muted">OWASP basics, input handling, sessions.</p>
+          </div>
+          <div class="card glow-hover glow-border">
+            <div class="icon">🧪</div>
+            <h4>Pen Testing</h4>
+            <p class="muted">Methodology, lab practice, reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-observe">
+      <div class="container">
+        <h3 class="section-title">Projects</h3>
+
+        <div class="grid projects-grid">
+          <article class="project card glow-hover glow-border">
+            <div class="project-head">
+              <h4>Bandit Wargame Walkthrough</h4>
+              <span class="tag">Learning</span>
+            </div>
+            <p class="muted">
+              Step-by-step notes solving OverTheWire Bandit levels, focusing on
+              Linux, permissions, and enumeration with reproducible commands.
+            </p>
+            <ul class="bullets">
+              <li>Core skills: grep, find, base64, SSH keys</li>
+              <li>Outputs: notes, cheat-sheets, scripts</li>
+            </ul>
+          </article>
+
+          <article class="project card glow-hover glow-border">
+            <div class="project-head">
+              <h4>Nmap Scanning Lab</h4>
+              <span class="tag">Lab</span>
+            </div>
+            <p class="muted">
+              Internal lab to practice host discovery, service/version
+              detection, and SYN vs. connect scans with documented profiles and
+              diffs.
+            </p>
+            <ul class="bullets">
+              <li>Profiles: fast, full, targeted</li>
+              <li>Artifacts: reports and diffs</li>
+            </ul>
+          </article>
+
+          <article class="project card glow-hover glow-border">
+            <div class="project-head">
+              <h4>Vulnerability Testing on Metasploitable</h4>
+              <span class="tag">Practice</span>
+            </div>
+            <p class="muted">
+              Enumeration and exploitation practice on Metasploitable with
+              attack paths, remediation ideas, and safe lab procedures.
+            </p>
+            <ul class="bullets">
+              <li>Focus: services, weak creds, misconfig</li>
+              <li>Notes: commands, screenshots, fixes</li>
+            </ul>
+          </article>
+
+          <!-- New: IP Subnet Calculator -->
+          <article class="project card glow-hover glow-border">
+            <div class="project-head">
+              <h4>IP Subnet Calculator</h4>
+              <span class="tag">Web App</span>
+            </div>
+            <p class="muted">
+              A simple IP subnet calculator built with HTML, CSS, and JavaScript
+              for quick CIDR math and ranges.
+            </p>
+            <div class="project-actions">
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/IsmailTP/IP-Subnet-Calculator"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <!-- New: Port Reference Cheat Sheet -->
+          <article class="project card glow-hover glow-border">
+            <div class="project-head">
+              <h4>Port Reference Cheat Sheet</h4>
+              <span class="tag">Reference</span>
+            </div>
+            <p class="muted">
+              A handy cheat sheet listing common network ports and services for
+              cybersecurity study and labs.
+            </p>
+            <div class="project-actions">
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/IsmailTP/Port-Reference-Cheat-Sheet"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog/Notes -->
+    <section id="blog" class="section section-observe">
+      <div class="container">
+        <h3 class="section-title">Blog / Notes</h3>
+        <div class="grid blog-grid">
+          <article class="card glow-hover glow-border">
+            <h4>My First Capture The Flag Experience</h4>
+            <p class="muted">
+              My first CTF was a web recon challenge. I scanned the target,
+              checked the source code, and found a hidden backup file. Inside it
+              was an encoded admin token. After decoding and logging in, I
+              captured the flag — simple, thrilling, and proof that patience
+              beats guessing in hacking.
+            </p>
+            <span class="tag">Placeholder</span>
+          </article>
+          <article class="card glow-hover glow-border">
+            <h4>What I Learned from Kali Linux</h4>
+            <p class="muted">
+              From Kali, I learned how real hacking tools work in practice —
+              scanning networks, finding open ports, analyzing vulnerabilities,
+              and using the terminal efficiently. It taught me command-line
+              discipline, patience, and the mindset of an ethical hacker: think
+              like an attacker, act responsibly, and always document every step.
+            </p>
+            <span class="tag">Placeholder</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-observe">
+      <div class="container">
+        <h3 class="section-title">Contact</h3>
+        <p class="muted">
+          Open to collaboration, internships, and junior roles. Fastest
+          responses by email or LinkedIn DM.
+        </p>
+
+        <div class="contact-row">
+          <!-- Hire / Email -->
+          <a
+            class="btn btn-primary glow-border"
+            href="mailto:inuismail10@gmail.com?subject=Opportunity%20for%20Ismail%20Inu"
+            aria-label="Email"
+            >Hire Me</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="mailto:inuismail10@gmail.com"
+            aria-label="Email direct"
+            >inuismail10@gmail.com</a
+          >
+
+          <!-- GitHub -->
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/IsmailTP"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+
+          <!-- LinkedIn + Instagram next to each other -->
+          <a
+            class="btn btn-ghost"
+            href="https://www.linkedin.com/in/ismail-tp-3099b9380/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://www.instagram.com/inu.ismail"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+
+          <!-- Phone -->
+          <a class="btn btn-ghost" href="tel:+918113802658" aria-label="Phone"
+            >+91 8113802658</a
+          >
+        </div>
+
+        <p class="muted" style="margin-top: 10px">DOB: 13.04.2004</p>
+      </div>
+    </section>
+
+    <footer class="footer glass">
+      <div class="container foot">
+        <span>Built by Ismail </span>
+        <span class="muted small">© <span id="year"></span></span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
