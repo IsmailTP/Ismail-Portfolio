@@ -44,7 +44,15 @@ body{
 .section{padding:92px 20px}
 .container{max-width:1100px; margin:0 auto}
 .section-heading{font-size:40px; margin:0}
-.neon{color:#aef5d5; text-shadow:0 0 18px rgba(44,255,155,0.25)}
+.neon {
+  color: #aef5d5;
+  text-shadow: none;
+}
+.section-heading.neon {
+  border-bottom: 1px solid rgba(44,255,155,0.2);
+  padding-bottom: 6px;
+}
+
 .prompt{color:#a9ffcf; opacity:.9; margin:8px 0 24px}
 
 /* Hero */
@@ -104,4 +112,115 @@ body{
 @media(max-width:640px){
   .nav nav{display:none}
   .action-row{flex-direction:column}
+}
+/* === Neon Glow Fix (Uniform Shading) === */
+
+/* Make sure sections don't clip heading glow */
+.section, .container {
+  overflow: visible;
+}
+
+/* Stronger, layered neon text-shadow that's consistent */
+.neon {
+  color: #b8ffdf;
+  text-shadow:
+    0 0 4px rgba(44,255,155,0.55),
+    0 0 10px rgba(44,255,155,0.32),
+    0 0 20px rgba(44,255,155,0.18),
+    0 8px 28px rgba(0,0,0,0.45);
+}
+
+/* Halo glow behind section headings */
+.section-heading.neon {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding-bottom: 4px;
+}
+
+.section-heading.neon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  width: 260%;
+  height: 120%;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 30%, rgba(44,255,155,0.08), rgba(44,255,155,0.03) 18%, transparent 35%);
+  filter: blur(10px);
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Soft breathing animation */
+@keyframes neon-breathe {
+  0%   { transform: translate(-50%, -40%) scale(0.995); opacity: 0.92; }
+  50%  { transform: translate(-50%, -40%) scale(1.005); opacity: 1; }
+  100% { transform: translate(-50%, -40%) scale(0.995); opacity: 0.92; }
+}
+.section-heading.neon::after {
+  animation: neon-breathe 4s ease-in-out infinite;
+}
+.contact-board a {
+  text-decoration: none;
+}
+.contact-board .value {
+  text-decoration: none;
+  border-bottom: none;
+}
+/* === About Section Redesign === */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text p {
+  color: #d9e4e1;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.about-text .highlight {
+  color: #2cff9b;
+  font-weight: 600;
+}
+
+.about-aside {
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.aside-title {
+  font-size: 15px;
+  color: #2cff9b;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 4px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.skills-list li {
+  font-size: 14px;
+  color: #c8d7d4;
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.06);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
