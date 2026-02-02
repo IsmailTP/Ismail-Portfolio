@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO & Social Media -->
-    <meta name="description" content="Ismail TP - Ethical Hacker & Penetration Tester based in Calicut, Kerala. Specializing in Web Application Security, Network Assessments, and Malware Analysis." />
-    <meta name="keywords" content="ethical hacker kerala, penetration tester calicut, cybersecurity researcher india, web security, malware analysis, red teaming, Ismail TP" />
-    <meta name="author" content="Ismail TP" />
 
-    <meta property="og:title" content="Ismail TP | Ethical Hacker & Researcher">
-    <meta property="og:description" content="Ethical Hacker based in Calicut, Kerala. Specializing in Offensive Security and Red Teaming.">
-    <meta property="og:url" content="https://ismailtp.github.io">
-    <meta property="og:type" content="website">
-    
-    <title>Ismail TP | Ethical Hacker & Researcher</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
+  <!-- SEO & Social Media -->
+  <meta name="description"
+    content="Ismail TP - Ethical Hacker & Penetration Tester based in Calicut, Kerala. Specializing in Web Application Security, Network Assessments, and Malware Analysis." />
+  <meta name="keywords"
+    content="ethical hacker kerala, penetration tester calicut, cybersecurity researcher india, web security, malware analysis, red teaming, Ismail TP" />
+  <meta name="author" content="Ismail TP" />
+
+  <meta property="og:title" content="Ismail TP | Ethical Hacker & Researcher">
+  <meta property="og:description"
+    content="Ethical Hacker based in Calicut, Kerala. Specializing in Offensive Security and Red Teaming.">
+  <meta property="og:url" content="https://ismailtp.github.io">
+  <meta property="og:type" content="website">
+
+  <title>Ismail TP | Ethical Hacker & Researcher</title>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -37,373 +41,407 @@
     }
     </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-    <!-- SYSTEM BOOT PRELOADER -->
-    <div id="preloader">
-        <div class="loader-content">
-            <div class="loader-text">SYSTEM_BOOT_SEQUENCE</div>
-            <div class="loader-bar"><div class="bar-fill"></div></div>
-            <div class="loader-logs" id="loader-logs"></div>
-        </div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- SYSTEM BOOT PRELOADER -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-text">SYSTEM_BOOT_SEQUENCE</div>
+      <div class="loader-bar">
+        <div class="bar-fill"></div>
+      </div>
+      <div class="loader-logs" id="loader-logs"></div>
+    </div>
+  </div>
+
+  <!-- VISUAL EFFECTS -->
+  <div class="crt-overlay"></div>
+  <canvas id="cyber-canvas"></canvas>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+  <div class="scroll-progress"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="glass-nav">
+    <div class="logo">ISMAIL<span class="dot">.</span>TP</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#capabilities">Skills</a></li>
+      <li><a href="#work">Operations</a></li>
+      <li><a href="#blog">Writeups</a></li>
+      <li><a href="#contact" class="nav-btn mobile-only">Initialize</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="cyber-btn desktop-only">
+        <span class="cyber-btn-glitch"></span>
+        <span class="cyber-btn-tag">R25</span>
+        Initialize
+      </a>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Ethical Hacker & Researcher</span>
+      <h1 class="hero-title">
+        Thinking Like <br />
+        <span class="gradient-text hacker-text" data-value="The Adversary.">The Adversary.</span>
+      </h1>
+      <p class="hero-sub">
+        I assist organizations in securing their infrastructure by identifying
+        vulnerabilities before malicious actors do. Specializing in Web
+        Application Security and Network Penetration Testing.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="cyber-btn">
+          <span class="cyber-btn-glitch"></span>
+          <span class="cyber-btn-tag">OP01</span>
+          View Operations
+        </a>
+        <a href="#" class="cyber-btn secondary" download>
+          <span class="cyber-btn-glitch"></span>
+          <i class="fas fa-download" style="margin-right: 8px;"></i> Resume
+        </a>
+      </div>
+      <div class="social-mini">
+        <a href="https://github.com/IsmailTP" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ismail-tp" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" id="pgp-trigger" title="PGP Key"><i class="fas fa-key"></i></a>
+      </div>
     </div>
 
-    <!-- VISUAL EFFECTS -->
-    <div class="crt-overlay"></div>
-    <canvas id="cyber-canvas"></canvas>
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
-    <div class="scroll-progress"></div>
-
-    <!-- NAVIGATION -->
-    <nav class="glass-nav">
-      <div class="logo">ISMAIL<span class="dot">.</span>TP</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#methodology">Methodology</a></li>
-        <li><a href="#capabilities">Skills</a></li>
-        <li><a href="#work">Operations</a></li>
-        <li><a href="#blog">Writeups</a></li>
-        <li><a href="#contact" class="nav-btn mobile-only">Initialize</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="#contact" class="cyber-btn desktop-only">
-            <span class="cyber-btn-glitch"></span>
-            <span class="cyber-btn-tag">R25</span>
-            Initialize
-        </a>
-        <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-content">
-        <span class="badge">Ethical Hacker & Researcher</span>
-        <h1 class="hero-title">
-          Thinking Like <br />
-          <span class="gradient-text hacker-text" data-value="The Adversary.">The Adversary.</span>
-        </h1>
-        <p class="hero-sub">
-          I assist organizations in securing their infrastructure by identifying
-          vulnerabilities before malicious actors do. Specializing in Web
-          Application Security and Network Penetration Testing.
-        </p>
-        <div class="hero-actions">
-          <a href="#work" class="cyber-btn">
-             <span class="cyber-btn-glitch"></span>
-             <span class="cyber-btn-tag">OP01</span>
-             View Operations
-          </a>
-          <a href="#" class="cyber-btn secondary" download>
-             <span class="cyber-btn-glitch"></span>
-             <i class="fas fa-download" style="margin-right: 8px;"></i> Resume
-          </a>
+    <!-- INTERACTIVE TERMINAL -->
+    <div class="hero-visual">
+      <div class="terminal-window" id="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-btns">
+            <span class="circle red"></span><span class="circle yellow"></span><span class="circle green"></span>
+          </div>
+          <div class="terminal-title">guest@ismail-tp: ~</div>
         </div>
-        <div class="social-mini">
-          <a href="https://github.com/IsmailTP" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ismail-tp" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" id="pgp-trigger" title="PGP Key"><i class="fas fa-key"></i></a>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-output" id="terminal-output">
+            <!-- Text injected by JS -->
+          </div>
+          <div class="input-line">
+            <span class="prompt">guest@ismail-tp:~$</span>
+            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- INTERACTIVE TERMINAL -->
-      <div class="hero-visual">
-        <div class="terminal-window" id="terminal-window">
-            <div class="terminal-header">
-                <div class="terminal-btns">
-                    <span class="circle red"></span><span class="circle yellow"></span><span class="circle green"></span>
-                </div>
-                <div class="terminal-title">guest@ismail-tp: ~</div>
+  <!-- METHODOLOGY -->
+  <section id="methodology" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading center">My Methodology</h2>
+      <p class="section-sub center">I don't just run tools. I follow a rigorous lifecycle to ensure comprehensive
+        coverage.</p>
+      <div class="methodology-grid">
+        <div class="method-step tilt-card" data-tilt>
+          <div class="step-num">01</div>
+          <h3>Recon</h3>
+          <p>Passive & active footprinting to map the attack surface.</p>
+        </div>
+        <div class="method-step tilt-card" data-tilt>
+          <div class="step-num">02</div>
+          <h3>Mapping</h3>
+          <p>Identifying technology stacks, entry points, and logic flows.</p>
+        </div>
+        <div class="method-step tilt-card" data-tilt>
+          <div class="step-num">03</div>
+          <h3>Discovery</h3>
+          <p>Hunting for misconfigurations, CVEs, and logic flaws.</p>
+        </div>
+        <div class="method-step tilt-card" data-tilt>
+          <div class="step-num">04</div>
+          <h3>Exploitation</h3>
+          <p>Verifying vulnerabilities with safe, controlled payloads.</p>
+        </div>
+        <div class="method-step tilt-card" data-tilt>
+          <div class="step-num">05</div>
+          <h3>Reporting</h3>
+          <p>Documenting findings with remediation steps for developers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="capabilities" class="layout-grid">
+    <div class="grid-col-left">
+      <h2 class="section-heading">Offensive Capabilities</h2>
+      <p class="text-lg">My expertise is divided into understanding vulnerabilities (Concepts) and the software used to
+        exploit them (Arsenal).</p>
+    </div>
+    <div class="grid-col-right">
+      <div class="skill-category">
+        <h3><i class="fas fa-globe"></i> Web Security</h3>
+        <div class="skill-tags">
+          <span>OWASP Top 10</span><span>XSS</span><span>SQL
+            Injection</span><span>IDOR</span><span>SSTI</span><span>Auth Bypass</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-network-wired"></i> Network & Infra</h3>
+        <div class="skill-tags">
+          <span>Port Scanning</span><span>Service Enumeration</span><span>Subnetting</span><span>Traffic
+            Analysis</span><span>Man-in-the-Middle</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-toolbox"></i> The Arsenal</h3>
+        <div class="skill-tags">
+          <span>BurpSuite
+          </span><span>Nmap</span><span>Wireshark</span><span>Metasploit</span><span>Ghidra</span><span>Python</span><span>Bash</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LABS -->
+  <section id="labs" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading center">Practice Platforms</h2>
+      <div class="labs-flex">
+        <div class="lab-item tilt-card" data-tilt>
+          <i class="fas fa-shield-alt"></i>
+          <span>PortSwigger Academy</span>
+          <span class="lab-stat">Active Learner</span>
+        </div>
+        <div class="lab-item tilt-card" data-tilt>
+          <i class="fas fa-cube"></i>
+          <span>Hack The Box</span>
+          <span class="lab-stat">Rank: Script Kiddie</span>
+        </div>
+        <div class="lab-item tilt-card" data-tilt>
+          <i class="fas fa-laptop-code"></i>
+          <span>TryHackMe</span>
+          <span class="lab-stat">Top 20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading">Featured Operations</h2>
+      <div class="projects-wrapper">
+        <div class="project-card tilt-card" data-tilt>
+          <div class="project-content">
+            <div class="badge-row">
+              <span class="status-badge live">Live</span>
+              <span class="status-badge-secondary">Impact: 200+ Students</span>
             </div>
-            <div class="terminal-body" id="terminal-body">
-                <div class="terminal-output" id="terminal-output">
-                    <!-- Text injected by JS -->
-                </div>
-                <div class="input-line">
-                    <span class="prompt">guest@ismail-tp:~$</span>
-                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- METHODOLOGY -->
-    <section id="methodology" class="section-padding">
-      <div class="container">
-        <h2 class="section-heading center">My Methodology</h2>
-        <p class="section-sub center">I don't just run tools. I follow a rigorous lifecycle to ensure comprehensive coverage.</p>
-        <div class="methodology-grid">
-          <div class="method-step tilt-card" data-tilt>
-            <div class="step-num">01</div>
-            <h3>Recon</h3>
-            <p>Passive & active footprinting to map the attack surface.</p>
-          </div>
-          <div class="method-step tilt-card" data-tilt>
-            <div class="step-num">02</div>
-            <h3>Mapping</h3>
-            <p>Identifying technology stacks, entry points, and logic flows.</p>
-          </div>
-          <div class="method-step tilt-card" data-tilt>
-            <div class="step-num">03</div>
-            <h3>Discovery</h3>
-            <p>Hunting for misconfigurations, CVEs, and logic flaws.</p>
-          </div>
-          <div class="method-step tilt-card" data-tilt>
-            <div class="step-num">04</div>
-            <h3>Exploitation</h3>
-            <p>Verifying vulnerabilities with safe, controlled payloads.</p>
-          </div>
-          <div class="method-step tilt-card" data-tilt>
-            <div class="step-num">05</div>
-            <h3>Reporting</h3>
-            <p>Documenting findings with remediation steps for developers.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="capabilities" class="layout-grid">
-      <div class="grid-col-left">
-        <h2 class="section-heading">Offensive Capabilities</h2>
-        <p class="text-lg">My expertise is divided into understanding vulnerabilities (Concepts) and the software used to exploit them (Arsenal).</p>
-      </div>
-      <div class="grid-col-right">
-        <div class="skill-category">
-          <h3><i class="fas fa-globe"></i> Web Security</h3>
-          <div class="skill-tags">
-            <span>OWASP Top 10</span><span>XSS</span><span>SQL Injection</span><span>IDOR</span><span>SSTI</span><span>Auth Bypass</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-network-wired"></i> Network & Infra</h3>
-          <div class="skill-tags">
-            <span>Port Scanning</span><span>Service Enumeration</span><span>Subnetting</span><span>Traffic Analysis</span><span>Man-in-the-Middle</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-toolbox"></i> The Arsenal</h3>
-          <div class="skill-tags">
-            <span>BurpSuite </span><span>Nmap</span><span>Wireshark</span><span>Metasploit</span><span>Ghidra</span><span>Python</span><span>Bash</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LABS -->
-    <section id="labs" class="section-padding">
-        <div class="container">
-          <h2 class="section-heading center">Practice Platforms</h2>
-          <div class="labs-flex">
-            <div class="lab-item tilt-card" data-tilt>
-              <i class="fas fa-shield-alt"></i>
-              <span>PortSwigger Academy</span>
-              <span class="lab-stat">Active Learner</span>
-            </div>
-            <div class="lab-item tilt-card" data-tilt>
-              <i class="fas fa-cube"></i>
-              <span>Hack The Box</span>
-              <span class="lab-stat">Rank: Script Kiddie</span>
-            </div>
-            <div class="lab-item tilt-card" data-tilt>
-              <i class="fas fa-laptop-code"></i>
-              <span>TryHackMe</span>
-              <span class="lab-stat">Top 20%</span>
+            <h3>Shadow Code</h3>
+            <p>Developed a mobile-web simulation to teach malware logic. Used by over 200 students to understand
+              infection vectors.</p>
+            <div class="tags"><span>Educational Tool</span><span>Simulation Logic</span></div>
+            <div class="project-actions">
+              <a href="https://ismailtp.github.io/game/" target="_blank" class="project-link">Execute <i
+                  class="fas fa-arrow-right"></i></a>
+              <a href="https://github.com/IsmailTP/game" target="_blank" class="project-link">Source <i
+                  class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
-    </section>
+        <div class="project-card tilt-card" data-tilt>
+          <div class="project-content">
+            <span class="status-badge completed">Live Tool</span>
+            <h3>IP Subnet Calculator</h3>
+            <p>Built a utility for network architects to calculate CIDR notations and IP ranges, streamlining recon.</p>
+            <div class="tags"><span>Networking</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <a href="https://ismailtp.github.io/IP-Subnet-Calculator/" target="_blank" class="project-link">Execute <i
+                  class="fas fa-arrow-right"></i></a>
+              <a href="https://github.com/IsmailTP/IP-Subnet-Calculator" target="_blank" class="project-link">Source <i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card tilt-card" data-tilt>
+          <div class="project-content">
+            <span class="status-badge wip">R&D</span>
+            <h3>The Void CTF</h3>
+            <p>Designing the architecture for a custom Capture The Flag platform to host proprietary web challenges.</p>
+            <div class="tags"><span>CTF Architecture</span></div>
+            <div class="project-actions">
+              <a href="#" class="project-link">Access Denied <i class="fas fa-lock"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section id="work" class="section-padding">
-      <div class="container">
-        <h2 class="section-heading">Featured Operations</h2>
-        <div class="projects-wrapper">
-          <div class="project-card tilt-card" data-tilt>
-            <div class="project-content">
-              <div class="badge-row">
-                  <span class="status-badge live">Live</span>
-                  <span class="status-badge-secondary">Impact: 200+ Students</span>
+  <!-- WRITEUPS -->
+  <section id="blog" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading center">Security Writeups</h2>
+      <div class="projects-wrapper">
+        <div class="project-card tilt-card" data-tilt>
+          <div class="project-content">
+            <span class="status-badge-secondary">Article</span>
+            <h3>Bypassing WAF with Obfuscation</h3>
+            <p>An analysis of how standard Web Application Firewalls can be tricked using payload encoding.</p>
+            <a href="#" class="project-link">Read Analysis <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project-card tilt-card" data-tilt>
+          <div class="project-content">
+            <span class="status-badge-secondary">Walkthrough</span>
+            <h3>HackTheBox: Retired Machine</h3>
+            <p>Full walkthrough of the 'Retired' machine, exploiting an SQL injection vulnerability.</p>
+            <a href="#" class="project-link">Read Analysis <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading center">Training & Certifications</h2>
+      <div class="certs-grid">
+        <div class="cert-card tilt-card" data-tilt>
+          <div class="cert-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Certified Ethical Hacker</h3>
+          <p class="cert-issuer">Training Completed @ Offenso Academy</p>
+        </div>
+        <div class="cert-card tilt-card" data-tilt>
+          <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
+          <h3>Web Penetration Testing</h3>
+          <p class="cert-issuer">Training Completed @ Offenso Academy</p>
+        </div>
+        <div class="cert-card tilt-card" data-tilt>
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <h3>Cybersecurity Essentials</h3>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (FIXED: Full Width + Spaced Tags) -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <h2 class="section-heading center">System Logs (Experience)</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker current"></div>
+          <div class="timeline-content tilt-card" data-tilt>
+
+            <div class="timeline-header-row">
+              <div class="timeline-title-group">
+                <h3>Security Researcher & R&D</h3>
+                <h4>Offenso Hackers Academy</h4>
               </div>
-              <h3>Shadow Code</h3>
-              <p>Developed a mobile-web simulation to teach malware logic. Used by over 200 students to understand infection vectors.</p>
-              <div class="tags"><span>Educational Tool</span><span>Simulation Logic</span></div>
-              <div class="project-actions">
-                <a href="https://ismailtp.github.io/game/" target="_blank" class="project-link">Execute <i class="fas fa-arrow-right"></i></a>
-                <a href="https://github.com/IsmailTP/game" target="_blank" class="project-link">Source <i class="fab fa-github"></i></a>
-              </div>
+              <span class="date-badge">Present</span>
+            </div>
+
+            <p>
+              Spearheading research on emerging web threats and developing internal
+              automated security tools. Designing advanced curriculum for practical
+              cybersecurity training and mentoring students in red team operations.
+            </p>
+
+            <div class="job-tags">
+              <span>Malware Analysis</span>
+              <span>Python Automation</span>
+              <span>Curriculum Design</span>
             </div>
           </div>
-          <div class="project-card tilt-card" data-tilt>
-            <div class="project-content">
-              <span class="status-badge completed">Live Tool</span>
-              <h3>IP Subnet Calculator</h3>
-              <p>Built a utility for network architects to calculate CIDR notations and IP ranges, streamlining recon.</p>
-              <div class="tags"><span>Networking</span><span>JavaScript</span></div>
-              <div class="project-actions">
-                <a href="https://ismailtp.github.io/IP-Subnet-Calculator/" target="_blank" class="project-link">Execute <i class="fas fa-arrow-right"></i></a>
-                <a href="https://github.com/IsmailTP/IP-Subnet-Calculator" target="_blank" class="project-link">Source <i class="fab fa-github"></i></a>
-              </div>
-            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="footer-section">
+    <div class="container small-container">
+      <h2 class="section-heading center">Initialize Handshake</h2>
+      <p class="section-sub center">I am available for freelance penetration testing and full-time security roles.</p>
+      <div class="contact-wrapper">
+        <form action="https://formspree.io/f/mvzzogla" method="POST" class="contact-form">
+          <div class="form-group"><input type="text" name="name" placeholder="Name / ID" required /></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Return Address (Email)" required />
           </div>
-          <div class="project-card tilt-card" data-tilt>
-            <div class="project-content">
-              <span class="status-badge wip">R&D</span>
-              <h3>The Void CTF</h3>
-              <p>Designing the architecture for a custom Capture The Flag platform to host proprietary web challenges.</p>
-              <div class="tags"><span>CTF Architecture</span></div>
-              <div class="project-actions">
-                <a href="#" class="project-link">Access Denied <i class="fas fa-lock"></i></a>
-              </div>
-            </div>
+          <div class="form-group"><textarea name="message" rows="5" placeholder="Transmission content..."
+              required></textarea></div>
+          <button type="submit" class="cyber-btn full-width">Send Transmission</button>
+        </form>
+        <div class="direct-contact">
+          <p>Or email directly:</p>
+          <a href="mailto:inuismail10@gmail.com" class="email-link">inuismail10@gmail.com</a>
+          <div class="footer-socials">
+            <a href="https://github.com/IsmailTP" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ismail-tp" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- WRITEUPS -->
-    <section id="blog" class="section-padding">
-        <div class="container">
-            <h2 class="section-heading center">Security Writeups</h2>
-            <div class="projects-wrapper">
-                <div class="project-card tilt-card" data-tilt>
-                    <div class="project-content">
-                        <span class="status-badge-secondary">Article</span>
-                        <h3>Bypassing WAF with Obfuscation</h3>
-                        <p>An analysis of how standard Web Application Firewalls can be tricked using payload encoding.</p>
-                        <a href="#" class="project-link">Read Analysis <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                 <div class="project-card tilt-card" data-tilt>
-                    <div class="project-content">
-                        <span class="status-badge-secondary">Walkthrough</span>
-                        <h3>HackTheBox: Retired Machine</h3>
-                        <p>Full walkthrough of the 'Retired' machine, exploiting an SQL injection vulnerability.</p>
-                        <a href="#" class="project-link">Read Analysis <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certs" class="section-padding">
-        <div class="container">
-          <h2 class="section-heading center">Training & Certifications</h2>
-          <div class="certs-grid">
-            <div class="cert-card tilt-card" data-tilt>
-              <div class="cert-icon"><i class="fas fa-user-graduate"></i></div>
-              <h3>Certified Ethical Hacker</h3>
-              <p class="cert-issuer">Training Completed @ Offenso Academy</p>
-            </div>
-            <div class="cert-card tilt-card" data-tilt>
-              <div class="cert-icon"><i class="fas fa-shield-virus"></i></div>
-              <h3>Web Penetration Testing</h3>
-              <p class="cert-issuer">Training Completed @ Offenso Academy</p>
-            </div>
-            <div class="cert-card tilt-card" data-tilt>
-              <div class="cert-icon"><i class="fas fa-award"></i></div>
-              <h3>Cybersecurity Essentials</h3>
-              <p class="cert-issuer">Cisco Networking Academy</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE (FIXED: Full Width + Spaced Tags) -->
-    <section id="experience" class="section-padding">
-        <div class="container">
-          <h2 class="section-heading center">System Logs (Experience)</h2>
-          <div class="timeline">
-            
-            <div class="timeline-item">
-              <div class="timeline-marker current"></div>
-              <div class="timeline-content tilt-card" data-tilt>
-                
-                <div class="timeline-header-row">
-                    <div class="timeline-title-group">
-                        <h3>Security Researcher & R&D</h3>
-                        <h4>Offenso Hackers Academy</h4>
-                    </div>
-                    <span class="date-badge">Present</span>
-                </div>
-
-                <p>
-                  Spearheading research on emerging web threats and developing internal 
-                  automated security tools. Designing advanced curriculum for practical 
-                  cybersecurity training and mentoring students in red team operations.
-                </p>
-
-                <div class="job-tags">
-                  <span>Malware Analysis</span>
-                  <span>Python Automation</span>
-                  <span>Curriculum Design</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="footer-section">
-      <div class="container small-container">
-        <h2 class="section-heading center">Initialize Handshake</h2>
-        <p class="section-sub center">I am available for freelance penetration testing and full-time security roles.</p>
-        <div class="contact-wrapper">
-          <form action="https://formspree.io/f/mvzzogla" method="POST" class="contact-form">
-            <div class="form-group"><input type="text" name="name" placeholder="Name / ID" required /></div>
-            <div class="form-group"><input type="email" name="email" placeholder="Return Address (Email)" required /></div>
-            <div class="form-group"><textarea name="message" rows="5" placeholder="Transmission content..." required></textarea></div>
-            <button type="submit" class="cyber-btn full-width">Send Transmission</button>
-          </form>
-          <div class="direct-contact">
-             <p>Or email directly:</p>
-             <a href="mailto:inuismail10@gmail.com" class="email-link">inuismail10@gmail.com</a>
-             <div class="footer-socials">
-                <a href="https://github.com/IsmailTP" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ismail-tp" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-             </div>
-          </div>
-        </div>
-        <div class="copyright">
-            &copy; 2026 Ismail TP. All Systems Operational. <br>
-            <span style="font-size: 0.7rem; opacity: 0.3;">Hint: Check the console for the flag.</span>
-        </div>
+      <div class="copyright">
+        &copy; 2026 Ismail TP. All Systems Operational. <br>
+        <span style="font-size: 0.7rem; opacity: 0.3;">Hint: Check the console for the flag.</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PGP KEY MODAL -->
-    <div id="pgp-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>PGP Public Key</h3>
-            <p class="modal-sub">Use this key to send me encrypted messages.</p>
-            <pre class="pgp-block">
+  <!-- PGP KEY MODAL -->
+  <div id="pgp-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>PGP Public Key</h3>
+      <p class="modal-sub">Use this key to send me encrypted messages.</p>
+      <p><strong>Fingerprint:</strong><br>
+        <code>E337 516C 36A6 2CDF AABB F3C0 FDFD 2E1B 3657 EF4B</code>
+      </p>
+
+      <pre class="pgp-block">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-(PASTE YOUR REAL KEY HERE)
+
+mDMEaYAklRYJKwYBBAHaRw8BAQdA263vXSn1MqLfj2lkvfCpH3KWz+9j4sLE4jUy
+pxdbN9S0IUlzbWFpbCBUUCA8aW51aXNtYWlsMTBAZ21haWwuY29tPoiWBBMWCgA+
+FiEE4zdRbDamLN+qu/PA/f0uGzZX70sFAmmAJJUCGwMFCQHhM4AFCwkIBwIGFQoJ
+CAsCBBYCAwECHgECF4AACgkQ/f0uGzZX70sJ/QEA2jo4Fcs8JdZ4Boq12gANWkSd
+kpaWIMEBu4xx9MerqasA/2TbekD+Y8760ITZ9b/4Z2jeLmtsKZpg02zAL50Juu8P
+uDgEaYAklRIKKwYBBAGXVQEFAQEHQGzu3ew8CIhpEOlgP9vhpWYmgtQXVCSHHql+
+5VnGG3t8AwEIB4h+BBgWCgAmFiEE4zdRbDamLN+qu/PA/f0uGzZX70sFAmmAJJUC
+GwwFCQHhM4AACgkQ/f0uGzZX70ukFQEAxhwDfxcJ48kzPtnYYoxLTFO7jJzl5jdy
+QN18RxXy+SYBAJBwWiYfbZYuZTo/7L/SGY/BxyRrF/GfJ4ZE3JqXH/QG
+=4Tru
+
 -----END PGP PUBLIC KEY BLOCK-----
             </pre>
-            <button class="cyber-btn" onclick="navigator.clipboard.writeText(document.querySelector('.pgp-block').innerText)">Copy Key</button>
-        </div>
+      <button class="cyber-btn"
+        onclick="navigator.clipboard.writeText(document.querySelector('.pgp-block').innerText)">Copy Key</button>
     </div>
+  </div>
 
-    <!-- 
+  <!-- 
        FLAG: CTF{W3b_D0M_1nsp3ct0r_M4st3r}
     -->
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
